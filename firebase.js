@@ -2,6 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+// import { getAnalytics } from "firebase/analytics";
+
 const firebaseConfig = {
   apiKey: "AIzaSyA_aCxdu5hEqKW_WYwsauWCVuChOJR3IF0",
   authDomain: "fir-login-e2326.firebaseapp.com",
@@ -13,6 +15,8 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
 const auth = getAuth();
 const db = getFirestore();
 
